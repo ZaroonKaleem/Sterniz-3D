@@ -7,7 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import code1 from "./code1.png";
-import sternizBg from "./Sterniz-bg.png"
+import SternizBg from "./Sterniz-bg.png"
 import about from "./about-us.jpg"
 
 import css from "./tech/css.png";
@@ -60,7 +60,7 @@ export {
   logo,
   about,
   backend,
-  sternizBg,
+  SternizBg,
   creator,
   mobile,
   web,

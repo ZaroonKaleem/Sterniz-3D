@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close, sternizBg } from "../assets";
+import { logo, menu, close, SternizBg } from "../assets";
 import resume from "/src/jeff_jiang.pdf";
-import { sterniz } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -43,7 +42,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={sternizBg} width='200px' alt='logo' className='w-28px h-24 object-contain' />
+          <img src={SternizBg} width='200px' alt='logo' className='w-28px h-24 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             {/* FullStack Developer &nbsp; */}
             {/* <span className='sm:block hidden'> | Portfolio</span> */}
