@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { LOGO2, sterniz } from "../assets";
+import { LOGO2, SternizBg } from "../assets";
 import Typewriter from "react-ts-typewriter";
 import { Link } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const Footer = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={sterniz} alt="logo" className="w-28 h-28 object-contain" />
+          <img src={SternizBg} alt="logo" className="w-28 h-28 object-contain" />
         </Link>
         <p className="text-secondary text-[17px] leading-[30px] text-center select-none">
           {new Date().getFullYear()} &copy; Sterniz. All rights
