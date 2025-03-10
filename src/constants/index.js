@@ -80,18 +80,26 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
+    path: "/#about", // Navigate to home page and scroll to #about
+
   },
   {
     id: "contact",
     title: "Contact",
+    path: "/#contact", // Navigate to home page and scroll to #about
+
   },
   {
     id: "Jobs",
     title: "Academy",
+    path: "/#jobs", // Navigate to home page and scroll to #about
+
   },
   {
     id: "career",
     title: "Career",
+    path: "/#career", // Navigate to home page and scroll to #about
+
   },
 ];
 
