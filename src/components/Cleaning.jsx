@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -57,6 +58,7 @@ const CleaningServiceCard = ({ experience }) => {
 };
 
 const CleaningServices = () => {
+    const navigate = useNavigate();
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -79,7 +81,9 @@ const CleaningServices = () => {
         </VerticalTimeline>
 
         <div className="mt-10 flex justify-center">
-          <button className="px-6 py-3 bg-purple-500 text-black font-bold rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300 w-auto">
+          <button 
+          onClick={() => navigate("/cleaning-services")}
+          className="px-6 py-3 bg-purple-500 text-black font-bold rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300 w-auto">
             More Cleaning Services
           </button>
         </div>

@@ -56,7 +56,51 @@ import zapflow from "./zapflow.png";
 import sheild from "./sheild.png"
 import facility from "./facility.png";
 import cleaning from "./cleaning.png";
+import c1 from "./images/c1.jpg"
+import c2 from "./images/c2.jpg"
+import c3 from "./images/c3.jpg"
+import c4 from "./images/c4.jpg"
+import c5 from "./images/c5.jpg"
+import c6 from "./images/c6.jpg"
+import c7 from "./images/c7.jpg"
+import c8 from "./images/c8.jpg"
+import c9 from "./images/c9.jpg"
+import c10 from "./images/c10.jpg"
+import c11 from "./images/c11.jpg"
+import c12 from "./images/c12.jpg"
+import c13 from "./images/c13.jpg"
+import c14 from "./images/c14.jpg"
+import c15 from "./images/c15.jpg"
+import c16 from "./images/c16.jpg"
+import c17 from "./images/c17.jpg"
+import c18 from "./images/c18.jpg"
+import c19 from "./images/c19.jpg"
+import c20 from "./images/c20.jpg"
+import c21 from "./images/c21.jpg"
+import emp from "./images/emp.png"
 export {
+  c1,
+  c2,
+  c3,
+  c4,
+  c5,
+  c6,
+  c7,
+  c8,
+  c9,
+  c10,
+  c11,
+  c12,
+  c13,
+  c14,
+  c15,
+  c16,
+  c17,
+  c18,
+  c19,
+  c20,
+  c21,
+  emp,
   logo,
   about,
   backend,

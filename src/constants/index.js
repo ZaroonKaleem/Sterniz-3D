@@ -1,4 +1,25 @@
 import {
+  c1,
+  c2,
+  c3,
+  c4,
+  c5,
+  c6,
+  c7,
+  c8,
+  c9,
+  c10,
+  c11,
+  c12,
+  c13,
+  c14,
+  c15,
+  c16,
+  c17,
+  c18,
+  c19,
+  c20,
+  c21,
   sheild,
   mobile,
   backend,
@@ -52,29 +73,29 @@ import {
 
 } from "../assets";
 export const navLinks = [
+  // {
+  //   id: "services",
+  //   title: "Services",
+  // },
   {
     id: "about",
     title: "About",
   },
   {
-    id: "services",
-    title: "Services",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "Jobs",
+    title: "Academy",
+  },
+  {
+    id: "career",
+    title: "Career",
   },
 ];
 
 const services = [
-  // {
-  //   title: "Web Developer",
-  //   icon: web,
-  // },
   {
     title: "Security Services",
     icon: sheild,
@@ -171,84 +192,22 @@ const technologies = [
 const experiences = [
   {
     title: "Property Protection",
-    // company_name: "Hack Reactor",
     icon: sheild,
     iconBg: "#E6DEDD",
-    // date: "2021",
     points: [
       "Property Protection ensures the safety of residential and commercial properties by preventing unauthorized access, vandalism, and theft through advanced security measures and surveillance."
-      // "Successfully led a team of engineers in the development and deployment of a high-performance API web application within a tight six-week timeframe.",
-      // "Designed and implemented a scalable backend service utilizing MongoDB and FastAPI, following a test-driven development approach, ensuring a stable and well-tested codebase.",
-      // "Implemented secure user authentication by integrating Simple JWT, ensuring secure access to sensitive user information and a seamless user experience.",
-    ],
+      ],
   },
   {
     title: "Event Protection",
-    // company_name: "ChiqueChickShop",
-    icon: sheild,
-    // iconBg: "#E6DEDD",  
+    icon: sheild,  
     iconBg: "#383E56",
-    // date: "2022",
     points: [
       "Event Protection ensures the safety and security of events by managing crowd control, preventing unauthorized access, and responding to emergencies effectively."
-      // "Developed ChiqueChickShop, a responsive e-commerce platform.",
-      // "Enhanced user experience with intuitive navigation features.",
-      // "Implemented secure payment processing for online transactions.",
     ],
   },
-  // {
-  //   title: "Emergency Call & Service",
-  //   // company_name: "Madamcoon",
-  //   icon: code1,
-  //   iconBg: "#E6DEDD",
-  //   // date: "2023",
-  //   points: [
-  //     "Emergency Call & Service provides rapid response and assistance during critical situations, ensuring safety and support when it matters most."
-  //     // "Spearheaded the revamp of Madamcoon, focusing on responsive design and user experience improvements.",
-  //     // "Integrated CMS and implemented SEO strategies for enhanced online visibility.",
-  //     // "Optimized the website for increased engagement and performance metrics.",
-  //   ],
-  // },
-  // {
-  //   title: "Gatekeeper Services",
-  //   // company_name: "YOUTUBE CLONE",
-  //   icon: code1,
-  //   iconBg: "#383E56",
-  //   // date: "2023",
-  //   points: [
-  //     "Gatekeeper Services ensure controlled access and security at entry points, preventing unauthorized access and maintaining a safe environment."
-  //     // "Developed a responsive React JS application consisting of stunning video sections, custom categories, channel pages, and, most importantly, you can play videos straight from this app.",
-  //     // "Used RAPID API to access various endpoints to retrieve data such as suggested videos, search video details, channel details, and channel videos.",
-  //     // "Ensured cross-browser and cross-platform compatibility.",
-  //   ],
-  // },
-  // {
-  //   title: "Reception Services",
-  //   // company_name: "MOVIE APP",
-  //   icon: code1,
-  //   iconBg: "#E6DEDD",
-  //   // date: "2023",
-  //   points: [
-  //     "Our reception services ensure a professional and welcoming first impression for visitors. We manage front desk operations, access control, and visitor assistance with efficiency and security."
-  //     // "Developed and maintained an application using React.js, Material UI, Alan AI and other related technologies.",
-  //     // "Enhanced user experience by implementing secure user authentication, providing a sleek dark mode option, and allowing users to sort movies by categories or genres. Users can now access movie and actor details and easily add movies to their favorites or watchlist, in addition to other convenient functionalities.",
-  //     // "Integrated voice assistant to application.",
-  //   ],
-  // },
-  // {
-  //   title: "Fire Safety Security",
-  //   // company_name: "MOVIE APP",
-  //   icon: code1,
-  //   iconBg: "#E6DEDD",
-  //   // date: "2023",
-  //   points: [
-  //     "We provide fire prevention, monitoring, and emergency response services to protect lives and property, ensuring compliance with safety regulations and rapid action in case of fire hazards."
-  //     // "Developed and maintained an application using React.js, Material UI, Alan AI and other related technologies.",
-  //     // "Enhanced user experience by implementing secure user authentication, providing a sleek dark mode option, and allowing users to sort movies by categories or genres. Users can now access movie and actor details and easily add movies to their favorites or watchlist, in addition to other convenient functionalities.",
-  //     // "Integrated voice assistant to application.",
-  //   ],
-  // },
 ];
+
 
 export const cleaningExperiences = [
   {
@@ -257,6 +216,7 @@ export const cleaningExperiences = [
     icon: cleaning,
     iconBg: "black",
     // date: "2022 - Present",
+    image: c1,
     points: ["Comprehensive cleaning solutions, including routine maintenance, deep cleaning, and specialized services tailored to different industries."
       // "Providing deep cleaning for commercial spaces.",
       // "Ensuring workplace hygiene and maintenance.",
@@ -275,6 +235,169 @@ export const cleaningExperiences = [
       // "Customized cleaning plans.",
       // "Trained professionals for a spotless home.",
     ],
+  },
+];
+
+export const cleaningExperiencesDetail = [
+  {
+    title: "Cleaning and service",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Comprehensive cleaning solutions, including routine maintenance, deep cleaning, and specialized services tailored to different industries."
+    ],
+    image:c1,
+  },
+  {
+    title: "Maintenance cleaning",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Regular cleaning to keep spaces clean and hygienic, ensuring long-term upkeep of buildings and facilities."
+    ],
+    image:c2,
+  },
+  {
+    title: "Daytime and service staff",
+    icon: cleaning,
+    iconBg: "#black",
+    points: ["On-site cleaning personnel available during the day to maintain cleanliness, handle immediate cleaning needs, and assist with facility management."
+    ],
+    image:c3,
+  },
+  {
+    title: "Glass and facade cleaning",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Professional cleaning of glass surfaces, windows, and building facades to remove dirt, smog, and stains, improving the building’s appearance."
+    ],
+    image:c4,
+  },
+  {
+    title: "Basic and special cleaning",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Deep cleaning services for areas requiring extra attention, such as carpets, upholstery, and hard-to-reach surfaces."
+    ],
+    image:c5,
+  },
+  {
+    title: "Hygiene & Safety Concept (HSC)",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["A structured approach to maintaining high hygiene and safety standards, especially in workplaces, hospitals, and food-related industries."
+    ],
+    image:c6,
+  },
+  {
+    title: "Disinfectant cleaning",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Thorough sanitization using disinfectants to eliminate bacteria, viruses, and germs, ensuring a safe environment."
+    ],
+    image:c7,
+  },
+  {
+    title: "Cleaning as part of your HACCP concept",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Cleaning services designed to meet HACCP (Hazard Analysis and Critical Control Points) guidelines for food safety and hygiene in food industries."
+    ],
+    image:c8,
+  },
+  {
+    title: "Outdoor area maintenance",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Maintenance of outdoor spaces, including pathways, gardens, and parking lots. Includes winter services like snow removal and de-icing."
+    ],
+    image:c9,
+  },
+  {
+    title: "Weed management",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Removal and prevention of unwanted plants and weeds from gardens, sidewalks, and industrial areas."
+    ],
+    image:c10,
+  },
+  {
+    title: "Janitorial services",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["General facility maintenance, including cleaning, minor repairs, waste management, and ensuring the building remains in good condition."
+    ],
+    image:c11,
+  },
+  {
+    title: "Construction cleaning",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Cleaning after construction or renovation projects, removing debris, dust, and residues to make the space ready for use."
+    ],
+    image:c12,
+  },
+  {
+    title: "Solar system cleaning",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Cleaning solar panels to remove dust, dirt, and bird droppings, ensuring optimal energy efficiency."
+    ],
+    image:c13,
+  },
+  {
+    title: "Machine cleaning & cooling lubricant service",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Application of protective coatings on floors to increase durability, prevent wear, and enhance appearance."
+    ],
+    image:c14,
+  },
+  {
+    title: "Coating: Long-lasting floor coating",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Cleaning and maintenance of industrial machines, including the replacement of cooling lubricants to ensure smooth operation."
+    ],
+    image:c15,
+  },
+  {
+    title: "Specific industry solutions",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Customized cleaning services designed for various industries like healthcare, logistics, and manufacturing."
+    ],
+    image:c16,
+  },
+  {
+    title: "Industrial cleaning and service",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Deep cleaning for factories, warehouses, and industrial plants, including machinery, floors, and workstations."
+    ],
+    image:c17,
+  },
+  {
+    title: "logistics",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Cleaning services for warehouses, distribution centers, and transport hubs to maintain cleanliness and operational efficiency."
+    ],
+    image:c18,
+  },
+  {
+    title: "Senior citizens and nursing homes",
+    icon: cleaning,
+    iconBg: "#E6DEDD",
+    points: ["Cleaning solutions for elder care facilities, ensuring hygiene, comfort, and safety for residents."
+    ],
+    image:c19,
+  },
+  {
+    title: "Housing industry",
+    icon: cleaning,
+    iconBg: "black",
+    points: ["Cleaning and maintenance services for residential properties, apartment buildings, and housing communities."
+    ],
+    image:c20,
   },
 ];
 
@@ -317,6 +440,99 @@ export const facilityManagementExperiences = [
   // },
 ];
 
+export const securityServices = [
+  {
+    title: "Property Protection",
+    icon: sheild,
+    iconBg: "#E6DEDD",
+    points: [
+      "Property Protection ensures the safety of residential and commercial properties by preventing unauthorized access, vandalism, and theft through advanced security measures and surveillance."
+      ],
+  },
+  {
+    title: "Event Protection",
+    icon: sheild,  
+    iconBg: "#383E56",
+    points: [
+      "Event Protection ensures the safety and security of events by managing crowd control, preventing unauthorized access, and responding to emergencies effectively."
+    ],
+  },
+  {
+    title: "Reception Services",
+    icon: sheild,
+    iconBg: "#E6DEDD",
+    points: [
+      "Our reception services ensure a professional and welcoming first impression for visitors. We manage front desk operations, access control, and visitor assistance with efficiency and security."
+      ],
+  },
+  {
+    title: "Fire Safety Security",
+    icon: sheild,
+    iconBg: "#383E56",
+    points: [
+      "We provide fire prevention, monitoring, and emergency response services to protect lives and property, ensuring compliance with safety regulations and rapid action in case of fire hazards."
+      ],
+  },
+  {
+    title: "Departemnt Store",
+    icon: sheild,
+    iconBg: "#E6DEDD",
+    points: [
+      "We ensure a safe shopping environment by preventing theft, monitoring store activities, and providing professional security personnel for customer and staff safety."
+      ],
+  },
+  {
+    title: "Doorman",
+    icon: sheild,
+    iconBg: "#383E56",
+    points: [
+      "Our professional doorman services enhance security and hospitality by controlling access, assisting guests, and maintaining a welcoming and safe environment for residential and commercial properties."
+      ],
+  },
+  {
+    title: "Mall Guard",
+    icon: sheild,
+    iconBg: "#E6DEDD",
+    points: [
+      "Mail guard services ensure the secure handling, screening, and delivery of mail and packages, preventing unauthorized access and protecting sensitive correspondence in residential and corporate settings."
+      ],
+  },
+  {
+    title: "Construction Site",
+    icon: sheild,
+    iconBg: "#383E56",
+    points: [
+      "Construction site services provide security and surveillance to prevent theft, vandalism, and unauthorized access while ensuring the safety of workers, equipment, and materials throughout the project."
+      ],
+  },
+];
+
+const achievements = [
+  {
+    title: "Improved Accuracy – Ensuring that all security-related data remains up-to-date and reliable, minimizing false alarms and inefficiencies.",
+  },
+  {
+    title: "Faster Response Times – Real-time information allows for quicker action in case of security breaches or suspicious activities.",
+  },
+  {
+    title: "Enhanced Collaboration – Strengthening communication between security personnel, clients, and monitoring teams for better decision-making.",
+  },
+  {
+    title: "Increased Safety – Contributing to a well-coordinated security network that proactively prevents risks and threats.",
+  },
+  {
+    title: "Operational Efficiency – Streamlining security procedures by reducing delays in verifying and processing critical security data.",
+  },
+  // {
+  //   title: "Selected in top 100 candidates for Google Cloud Training among 20k Students (2021).",
+  // },
+  // {
+  //   title: "Got Education Scholarship Scheme for Army Personnel(ESSA) Scholarship for securing 90+ % (2015 - 2023).",
+  // },
+  // {
+  //   title: "Played Nationals in Throwball for U-14 category. (2015).",
+  // },
+]
 
 const testimonials = [
   {
@@ -756,6 +972,8 @@ const projects = [
   },
 ];
 
+
+
 export {
   services,
   technologies,
@@ -763,4 +981,5 @@ export {
   testimonials,
   projects,
   imageProjects,
+  achievements
 };

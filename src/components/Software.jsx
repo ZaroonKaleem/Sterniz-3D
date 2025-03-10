@@ -1,0 +1,69 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { textVariant3 } from "../utils/motion";
+import { motion } from "framer-motion";
+import { emp } from "../assets"
+const Software = () => {
+  return (
+    <section className="min-h-screen bg-gray-900 text-white py-16 px-6">
+      <div className="max-w-7xl mt-4 mx-auto">
+        {/* Page Title */}
+        <motion.div variants={textVariant3()} initial="hidden" whileInView="show">
+  <h1 className="text-4xl mt-16 font-bold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-center mb-6">
+    Software Solutions
+  </h1>
+        <p className="text-lg text-gray-300 text-center mb-12">
+          Explore our innovative software solutions designed to enhance business efficiency.
+        </p>
+</motion.div>
+
+
+        {/* Employee Management System Card */}
+        <div className="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col md:flex-row items-center gap-6">
+          <img
+            src= {emp} // Replace with an actual image
+            alt="Employee Management System"
+            className="w-full md:w-1/3 rounded-lg"
+          />
+
+          <div className="flex-1">
+            {/* <h2 className="text-2xl font-semibold text-yellow-300 mb-4">
+              Employee Management System
+            </h2> */}
+            <h1 className="text-2xl font-semibold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  mb-6">
+    Employee Management System
+  </h1>
+            <p className="text-gray-300 text-lg mb-4">
+              Our Employee Management System streamlines HR processes, automates attendance tracking, and ensures efficient workforce management.  
+            </p>
+
+            {/* Features List */}
+            <ul className="list-disc pl-5 text-gray-400">
+              <li>Automated attendance & payroll</li>
+              <li>Shift scheduling & employee tracking</li>
+              <li>Performance evaluation & reporting</li>
+            </ul>
+
+            {/* CTA Button */}
+            <Link
+  to="/employee-management"
+  className="px-6 py-3 mt-4 bg-purple-500 text-black font-bold rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300 w-auto inline-block text-center"
+>
+  Learn More
+</Link>
+
+          </div>
+        </div>
+
+        {/* Future Solutions Placeholder */}
+        <div className="mt-16 text-center">
+          <p className="text-gray-400 text-lg">
+            More software solutions coming soon... Stay tuned!
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Software;

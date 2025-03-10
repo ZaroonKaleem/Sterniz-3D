@@ -9,8 +9,11 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Footer from "./Footer";
+import Software from "./Software"
+import SecurityServicesCard from "./Security"
 
 export {
+  Software,
   Hero,
   Navbar,
   About,
@@ -26,4 +29,5 @@ export {
   StarsCanvas,
   Footer,
   TicofabCanvas,
+  SecurityServicesCard
 };

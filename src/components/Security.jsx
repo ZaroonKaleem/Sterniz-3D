@@ -6,15 +6,13 @@ import {
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
-import { useNavigate } from "react-router-dom";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { securityServices } from "../constants"; // Assuming you have a new constant file for security services
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { textVariant3 } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
-
+const SecurityServiceCard = ({ service }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -22,32 +20,32 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      date={service.date}
+      iconStyle={{ background: service.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src={service.icon}
+            alt={service.service_name}
             className="w-[60%] h-[60%] object-contain"
           />
         </div>
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">{service.title}</h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {service.service_name}
         </p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
+        {service.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
+            key={`service-point-${index}`}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
           >
             {point}
@@ -58,12 +56,17 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
-  const navigate = useNavigate();
+const SecurityServices = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>Services</p>
+      {/* Heading Section */}
+      <motion.div
+        variants={textVariant3()} // Apply textVariant3 animation
+        initial="hidden" // Initial state
+        whileInView="show" // Animate when in view
+        viewport={{ once: true, amount: 0.25 }} // Trigger animation once
+      >
+        <p className={`${styles.sectionSubText} mt-4 text-center`}>What We Offer</p>
         <h2
           className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black text-center`}
         >
@@ -71,26 +74,19 @@ const Experience = () => {
         </h2>
       </motion.div>
 
+      {/* Timeline Section */}
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
+          {securityServices.map((service, index) => (
+            <SecurityServiceCard
+              key={`service-${index}`}
+              service={service}
             />
           ))}
         </VerticalTimeline>
-
-        <div className="mt-10 flex justify-center">
-          <button 
-          onClick={() => navigate("/security-services")} 
-          className="px-6 py-3 bg-purple-500 text-black font-bold rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300 w-auto">
-            More Security Services
-          </button>
-        </div>
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(SecurityServices, "security");
