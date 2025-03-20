@@ -78,7 +78,12 @@ import c19 from "./images/c19.jpg"
 import c20 from "./images/c20.jpg"
 import c21 from "./images/c21.jpg"
 import emp from "./images/emp.png"
+
+import JavascriptIcon from "./icons/square-js.svg";
+import GrainImage from "./images/grain.jpg";
 export {
+  JavascriptIcon,
+  GrainImage,
   c1,
   c2,
   c3,

@@ -24,7 +24,7 @@ const Footer = () => {
           reserved.
         </p>
       </div>
-      <div className="w-full h-auto flex justify-center text-purple-500 font-bold self-start text-2xl">
+      <div className="w-full h-auto flex justify-center text-[#3852a3] font-bold self-start text-2xl">
         <Typewriter
           text={[
             "Security Services",

@@ -5,7 +5,8 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Ticofab = ({ isMobile }) => {
-  const tico = useGLTF("./astro/scene.gltf");
+  // const tico = useGLTF("./astro/scene.gltf");
+  const tico = useGLTF("./security_camera/scene.gltf");
 
   return (
     <mesh>

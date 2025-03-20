@@ -26,43 +26,6 @@ const Contact = () => {
       [name]: value,
     });
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-
-  //   emailjs
-  //     .send(
-  //       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-  //       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-  //       {
-  //         name: form.name,
-  //         to_name: "Jeff Jiang",
-  //         email: form.email,
-  //         to_email: "jeff.jiang13@gmail.com",
-  //         message: form.message,
-  //       },
-  //       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-  //     )
-  //     .then(
-  //       () => {
-  //         setLoading(false);
-  //         alert("Thank you. I will get back to you as soon as possible.");
-
-  //         setForm({
-  //           name: "",
-  //           email: "",
-  //           message: "",
-  //         });
-  //       },
-  //       (error) => {
-  //         setLoading(false);
-  //         console.error(error);
-
-  //         alert("Ahh, something went wrong. Please try again.");
-  //       }
-  //     );
-  // };
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -109,7 +72,7 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h2 className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black`}>Contact.</h2>
+        <h2 className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black`}>Contact.</h2>
 
         <form
           ref={formRef}
@@ -152,7 +115,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='hover:bg-[#314277] bg-[#3954a9] duration-300 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>

@@ -11,7 +11,7 @@ const Achievement = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding}`}
+        className={`bg-[#222a49] rounded-2xl ${styles.padding}`}
       >
         <motion.div variants={textVariant()}>
           <h2 className={styles.sectionHeadText}>connect with us to hold secrecy</h2> <br />

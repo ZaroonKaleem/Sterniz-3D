@@ -32,21 +32,21 @@ const Hero = () => {
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500"></div>
-          <div className="w-1 sm:h-80 h-40 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500"></div>
+          <div className="w-5 h-5 rounded-full animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df]"></div>
+          <div className="w-1 sm:h-80 h-40 animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df]"></div>
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
           Sterniz <br />{" "}
-            <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black">
+            <span className="animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black">
             Your Safety, <br /> <span className="hidden sm:inline">Our Priority</span>
             </span>
           </h1>
 
           <p className={`${styles.heroSubText} mt-2 sm:-mb-10 text-white-100 max-w-lg`}>
             {text}
-            <Cursor cursorColor="#915eff" />
+            <Cursor cursorColor="#3954a9" />
           </p>
         </div>
       </div>

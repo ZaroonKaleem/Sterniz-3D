@@ -109,7 +109,7 @@ const services = [
     icon: sheild,
   },
   {
-    title: "Facility Management",
+    title: "Software Solutions",
     icon: facility,
   },
   {
@@ -209,7 +209,7 @@ const experiences = [
   {
     title: "Event Protection",
     icon: sheild,  
-    iconBg: "#383E56",
+    iconBg: "#00308F",
     points: [
       "Event Protection ensures the safety and security of events by managing crowd control, preventing unauthorized access, and responding to emergencies effectively."
     ],
@@ -222,7 +222,7 @@ export const cleaningExperiences = [
     title: "Cleaning and service",
     // company_name: "XYZ Cleaners",
     icon: cleaning,
-    iconBg: "black",
+    iconBg: "#00308F",
     // date: "2022 - Present",
     image: c1,
     points: ["Comprehensive cleaning solutions, including routine maintenance, deep cleaning, and specialized services tailored to different industries."
@@ -414,7 +414,7 @@ export const facilityManagementExperiences = [
     title: "Building Maintenance",
     // company_name: "ABC Facility Services",
     icon: facility,
-    iconBg: "black",
+    iconBg: "#00308F",
     // date: "2021 - Present",
     points: [
       "Providing regular maintenance for commercial properties.",

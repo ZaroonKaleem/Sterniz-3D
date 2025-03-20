@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
+        background: "#222a49",
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
@@ -65,7 +65,7 @@ const Experience = () => {
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>Services</p>
         <h2
-          className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-black text-center`}
+          className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black text-center`}
         >
           Security Services
         </h2>
@@ -84,7 +84,7 @@ const Experience = () => {
         <div className="mt-10 flex justify-center">
           <button 
           onClick={() => navigate("/security-services")} 
-          className="px-6 py-3 bg-purple-500 text-black font-bold rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300 w-auto">
+          className="px-6 py-3 hover:bg-[#314277] bg-[#3954a9] text-white font-bold rounded-lg shadow-md transition-all duration-300 w-auto">
             More Security Services
           </button>
         </div>
