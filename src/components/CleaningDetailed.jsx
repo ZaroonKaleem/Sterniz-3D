@@ -198,14 +198,8 @@ const CleaningServiceCard = ({ service, index }) => {
   }, [service.animation]);
 
   return (
-    // <motion.div
-    //   className="relative bg-[#1d1836] border border-white/30 text-white rounded-xl h-[500px] shadow-lg p-6 lg:grid lg:grid-cols-2 lg:gap-16"
-    //   initial={{ opacity: 0, y: 50 }}
-    //   animate={{ opacity: 1, y: 0 }}
-    //   transition={{ duration: 0.5, delay: index * 0.1 }}
-    // >
     <motion.div
-    className="relative bg-[#222a49] border border-[#314177]/90 text-white rounded-xl h-[500px] shadow-lg p-6 lg:grid lg:grid-cols-2 lg:gap-16"
+    className="relative bg-[#222a49] border border-[#314177]/90 text-white rounded-xl lg:h-[500px] h-[700px] shadow-lg p-6 lg:grid lg:grid-cols-2 lg:gap-16"
     style={{
       position: "sticky",
       top: `calc(144px + ${index * 20}px)`,
@@ -227,7 +221,7 @@ const CleaningServiceCard = ({ service, index }) => {
                       <img
               src={CheckCircleIcon}
               alt="Check Circle"
-              className="size-5 md:size-6"
+              className="size-5 md:size-6 sm:size-3"
               style={{ filter: "invert(100%)" }}
             />
             <span>{result.title}</span>
@@ -235,7 +229,18 @@ const CleaningServiceCard = ({ service, index }) => {
         ))}
       </ul>
     </div>
-    <div className="absolute right-10 bottom-20 w-[350px]">
+    <div className="relative mt-4 w-full flex justify-center lg:justify-end lg:absolute lg:right-10 lg:bottom-20">
+  {animationData && (
+    <Lottie
+      animationData={animationData}
+      loop={true}
+      className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px] max-h-[250px] md:max-h-[300px] lg:max-h-[350px] object-contain"
+    />
+  )}
+</div>
+
+
+    {/* <div className="absolute right-10 bottom-20 w-[350px]">
       {animationData && (
         <Lottie
           animationData={animationData}
@@ -243,7 +248,7 @@ const CleaningServiceCard = ({ service, index }) => {
           className="w-full h-auto object-contain"
         />
       )}
-    </div>
+    </div> */}
   </motion.div>
   );
 };

@@ -9,7 +9,7 @@ const Software = () => {
       <div className="max-w-7xl mt-4 mx-auto">
         {/* Page Title */}
         <motion.div variants={textVariant3()} initial="hidden" whileInView="show">
-  <h1 className="text-4xl mt-16 font-bold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-center mb-6">
+  <h1 className="text-4xl mt-16 font-bold animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent text-center mb-6">
     Software Solutions
   </h1>
         <p className="text-lg text-gray-300 text-center mb-12">
@@ -30,7 +30,7 @@ const Software = () => {
             {/* <h2 className="text-2xl font-semibold text-yellow-300 mb-4">
               Employee Management System
             </h2> */}
-            <h1 className="text-2xl font-semibold animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent  mb-6">
+            <h1 className="text-2xl font-semibold animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent  mb-6">
     Employee Management System
   </h1>
             <p className="text-gray-300 text-lg mb-4">
@@ -47,7 +47,7 @@ const Software = () => {
             {/* CTA Button */}
             <Link
   to="/employee-management"
-  className="px-6 py-3 mt-4 bg-purple-500 text-black font-bold rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300 w-auto inline-block text-center"
+  className="px-6 py-3 mt-4 bg-[#3954a9] text-black font-bold rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300 w-auto inline-block text-center"
 >
   Learn More
 </Link>

@@ -1,4 +1,5 @@
 import {
+  clean,
   c1,
   c2,
   c3,
@@ -221,8 +222,9 @@ export const cleaningExperiences = [
   {
     title: "Cleaning and service",
     // company_name: "XYZ Cleaners",
-    icon: cleaning,
-    iconBg: "#00308F",
+    icon: clean,
+    // iconBg: "#00308F",
+    iconBg: "#E6DEDD",
     // date: "2022 - Present",
     image: c1,
     points: ["Comprehensive cleaning solutions, including routine maintenance, deep cleaning, and specialized services tailored to different industries."
@@ -234,7 +236,7 @@ export const cleaningExperiences = [
   {
     title: "Maintenance cleaning",
     // company_name: "HomeShine",
-    icon: cleaning,
+    icon: clean,
     // iconBg: "black",
     iconBg: "#E6DEDD",
     // date: "2020 - Present",

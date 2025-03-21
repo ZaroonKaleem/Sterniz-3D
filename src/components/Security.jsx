@@ -251,10 +251,11 @@ const SecurityServiceCard = ({ service, index }) => {
   
   return (
     <motion.div
-  className="relative bg-[#222a49] border border-[#314177]/90 text-white rounded-xl h-[500px] shadow-lg p-6 lg:grid lg:grid-cols-2 lg:gap-16"
+  className="relative bg-[#222a49] border border-[#314177]/90 text-white rounded-xl h-[700px] shadow-lg p-6 lg:grid lg:grid-cols-2 lg:gap-16"
   style={{
     position: "sticky",
-    top: `calc(144px + ${index * 20}px)`, // Ensures each new card stacks slightly below the previous one
+    top: `calc(${window.innerWidth < 768 ? "80px" : "144px"} + ${index * 20}px)`, // Smaller top spacing on mobile
+    // top: `calc(144px + ${index * 20}px)`, // Ensures each new card stacks slightly below the previous one
     zIndex: index - index, // Higher index cards stack on top
   }}
   initial={{ opacity: 0, y: 50 }}
@@ -297,22 +298,21 @@ const SecurityServiceCard = ({ service, index }) => {
 
   {/* Right Side Animation */}
   <div className="relative">
-    <motion.div
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
-    >
-      {service.animation && animationMap[service.animation] && (
-          <Lottie
-            animationData={animationMap[service.animation]}
-            loop={true}
-            className="w-[450px] h-[auto] object-contain"
-          />
-        )}
+  <motion.div
+  initial={{ scale: 0.8, opacity: 0 }}
+  animate={{ scale: 1, opacity: 1 }}
+  transition={{ duration: 0.5, delay: index * 0.1 }}
+  className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none flex justify-center lg:justify-end"
+>
+  {service.animation && animationMap[service.animation] && (
+    <Lottie
+      animationData={animationMap[service.animation]}
+      loop={true}
+      className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[450px] max-h-[250px] md:max-h-[350px] lg:max-h-[500px] object-contain"
+    />
+  )}
+</motion.div>
 
-      {/* <img src={service.animation} alt={service.company} className="w-[100px] h-[100px] object-contain" /> */}
-    </motion.div>
   </div>
 </motion.div>
 
