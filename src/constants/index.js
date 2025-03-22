@@ -91,16 +91,15 @@ export const navLinks = [
 
   },
   {
-    id: "Jobs",
+    id: "Academy",
     title: "Academy",
-    path: "/#jobs", // Navigate to home page and scroll to #about
+    path: "/academy", // Navigate to home page and scroll to #about
 
   },
   {
     id: "career",
     title: "Career",
-    path: "/#career", // Navigate to home page and scroll to #about
-
+    path: "https://employeemanagementsystemclient-egghd2gphnctazh9.canadacentral-01.azurewebsites.net/careers",
   },
 ];
 

@@ -75,6 +75,8 @@
   import Security from "./components/Security"; // Import the SecurityServices component
   import CleaningDetailed from "./components/CleaningDetailed";
   import Achivements from "./components/Achivements";
+  import Academy from "./components/Academy";
+  import CourseDetail from "./components/CourseDetail";
   import { useLocation } from 'react-router-dom';
   import { useEffect } from "react";
 
@@ -139,6 +141,10 @@
             <Route path="/cleaning-services" element={<CleaningDetailed />} />
             <Route path="/software-solutions" element={<Software />} />
             {/* Add more routes as needed */}
+            {/* <Switch> */}
+            <Route path="/academy" element={<Academy />} />
+            <Route path="/course/:id" element={<CourseDetail />} />
+      {/* </Switch> */}
           </Routes>
               <Footer />
         </div>

@@ -54,9 +54,22 @@ const Hero = () => {
   {/* <div className="absolute top-[20%] sm:top-[35%] lg:top-[10%] right-[-10%] sm:right-[30%] lg:right-[5%] w-[250px] sm:w-[700px] md:w-[400px] lg:w-[500px] h-[250px] sm:h-[600px] md:h-[400px] lg:h-[500px]">
   <TicofabCanvas />
 </div> */}
-<div className="absolute top-[30%] sm:top-[45%] lg:top-[10%] mt-10 sm:mt-0 left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-[30%] lg:right-[5%] w-[300px] sm:w-[1000px] md:w-[400px] lg:w-[500px] h-[300px] sm:h-[1000px] md:h-[400px] lg:h-[500px]">
+<div className="absolute 
+top-[30%] 
+sm:top-[45%] 
+lg:top-[10%] 
+mt-10 
+sm:mt-0 
+left-1/2 
+-translate-x-1/2 
+sm:left-auto 
+sm:translate-x-0 
+sm:right-[30%] 
+lg:right-[0%] 
+  w-[400px] sm:w-[1200px] md:w-[600px] lg:w-[700px] h-[300px] sm:h-[1000px] md:h-[400px] lg:h-[500px]">
   <TicofabCanvas />
 </div>
+
 
 {/* <div className="absolute top-[25%] sm:top-[45%] lg:top-[10%] left-1/2 -translate-x-1/2 sm:left-auto sm:translate-x-0 sm:right-[30%] lg:right-[5%] w-[300px] sm:w-[1000px] md:w-[400px] lg:w-[500px] h-[300px] sm:h-[1000px] md:h-[400px] lg:h-[500px]">
   <TicofabCanvas />
