@@ -79,10 +79,13 @@ import c20 from "./images/c20.jpg"
 import c21 from "./images/c21.jpg"
 import emp from "./images/emp.png"
 import clean from "./company/clean.png"
+import bgVideo from "./bg.mp4"; // Adjust the path as needed
+
 
 import JavascriptIcon from "./icons/square-js.svg";
 import GrainImage from "./images/grain.jpg";
 export {
+  bgVideo,
   JavascriptIcon,
   GrainImage,
   clean,
