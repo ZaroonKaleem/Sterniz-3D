@@ -60,42 +60,71 @@ const CourseDetail = () => {
 
       {/* Apply Form */}
       <div className="bg-gray-800 p-8 rounded-lg max-w-3xl w-full">
-        <h2 className="text-2xl font-bold text-[#32549c] mb-6 text-center">Apply for the Course</h2>
-        <form className="space-y-6">
-          <div className="form-group">
-            <label htmlFor="name" className="text-lg">Full Name</label>
-            <input
-              type="text"
-              id="name"
-              required
-              className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email" className="text-lg">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              required
-              className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message" className="text-lg">Why do you want to take this course?</label>
-            <textarea
-              id="message"
-              required
-              className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full py-3 text-lg font-semibold bg-[#32549c] hover:bg-[#3954a9] text-white rounded-md transition-colors"
-          >
-            Apply Now
-          </button>
-        </form>
-      </div>
+  <h2 className="text-2xl font-bold text-[#32549c] mb-6 text-center">Apply for the Course</h2>
+  <form className="space-y-6">
+    <div className="form-group">
+      <label htmlFor="name" className="text-lg">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        required
+        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="email" className="text-lg">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        required
+        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="appointmentDate" className="text-lg">Appointment Date</label>
+      <input
+        type="date"
+        id="appointmentDate"
+        required
+        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="startDate" className="text-lg">From</label>
+      <input
+        type="date"
+        id="startDate"
+        required
+        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="endDate" className="text-lg">To</label>
+      <input
+        type="date"
+        id="endDate"
+        required
+        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+      />
+    </div>
+    <div className="form-group">
+      <label htmlFor="message" className="text-lg">Why do you want to take this course?</label>
+      <textarea
+        id="message"
+        required
+        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+      ></textarea>
+    </div>
+    <button
+      type="submit"
+      className="w-full py-3 text-lg font-semibold bg-[#32549c] hover:bg-[#3954a9] text-white rounded-md transition-colors"
+    >
+      Apply Now
+    </button>
+  </form>
+</div>
+
+
     </div>
   );
 };
