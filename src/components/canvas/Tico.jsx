@@ -7,7 +7,8 @@ import CanvasLoader from "../Loader";
 const Ticofab = ({ isMobile }) => {
   // const tico = useGLTF("./astro/scene.gltf");
   // const tico = useGLTF("./office/scene.gltf");
-  const tico = useGLTF("./facilityManagement/scene.gltf");
+  // const tico = useGLTF("./facilityManagement/scene.gltf");
+  const tico = useGLTF("./airport/scene.gltf");
 
   return (
     <mesh>
@@ -23,7 +24,8 @@ const Ticofab = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={tico.scene}
-        scale={isMobile ? 0.001 : 0.0010}
+        // scale={isMobile ? 0.001 : 0.0010}
+        scale={isMobile ? 0.5 : 0.35}
         // position={isMobile ? [0, -2.9, -0.2] : [0, -3.25, -1.5]}
         position={isMobile ? [0, -2.9, -0.2] : [0, -2.1, -1.5]}
         // rotation={[-0.01, -0.5, -0.1]}

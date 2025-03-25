@@ -105,17 +105,17 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Security Services",
+    title: "Software Solutions",
     icon: sheild,
   },
   {
-    title: "Software Solutions",
+    title: "Facility Maangement",
     icon: facility,
   },
-  {
-    title: "Cleaning Services",
-    icon: cleaning,
-  },
+  // {
+  //   title: "Cleaning Services",
+  //   icon: cleaning,
+  // },
 ];
 
 const technologies = [
