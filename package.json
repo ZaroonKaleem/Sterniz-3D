@@ -9,7 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@date-io/date-fns": "^3.2.1",
     "@emailjs/browser": "^3.10.0",
+    "@mui/lab": "^6.0.0-beta.31",
+    "@mui/material": "^6.4.8",
+    "@mui/x-date-pickers": "^7.28.0",
     "@react-three/drei": "^9.57.1",
     "@react-three/fiber": "^8.12.0",
     "framer-motion": "^10.0.1",
@@ -23,6 +27,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-slick": "^0.30.2",
     "react-tilt": "^1.0.2",
+    "react-time-picker": "^7.0.0",
     "react-toastify": "^11.0.5",
     "react-ts-typewriter": "^0.1.8-b",
     "react-use": "^17.6.0",
@@ -32,8 +37,8 @@
     "three": "^0.150.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",

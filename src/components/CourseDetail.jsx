@@ -89,24 +89,25 @@ const CourseDetail = () => {
         className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
       />
     </div>
-    <div className="form-group">
-      <label htmlFor="startDate" className="text-lg">From</label>
-      <input
-        type="date"
-        id="startDate"
-        required
-        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
-      />
-    </div>
-    <div className="form-group">
-      <label htmlFor="endDate" className="text-lg">To</label>
-      <input
-        type="date"
-        id="endDate"
-        required
-        className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
-      />
-    </div>
+<div className="form-group">
+  <label htmlFor="startTime" className="text-lg">From</label>
+  <input
+    type="time"
+    id="startTime"
+    required
+    className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+  />
+</div>
+<div className="form-group">
+  <label htmlFor="endTime" className="text-lg">To</label>
+  <input
+    type="time"
+    id="endTime"
+    required
+    className="w-full px-4 py-2 bg-gray-700 text-white rounded-md border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#32549c] focus:border-[#32549c]"
+  />
+</div>
+
     <div className="form-group">
       <label htmlFor="message" className="text-lg">Why do you want to take this course?</label>
       <textarea
