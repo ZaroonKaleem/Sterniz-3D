@@ -11,6 +11,7 @@
     StarsCanvas,
     Footer,
     Software,
+    Impressum,
   } from "./components";
   import BgVideo from "./assets/bg.mp4"
   import Cleaning from "./components/Cleaning";
@@ -76,6 +77,7 @@ const App = () => {
             }
           />
 
+          <Route path="/impressum" element={<Impressum />} />
           <Route path="/security-services" element={<Security />} />
           <Route path="/cleaning-services" element={<CleaningDetailed />} />
           <Route path="/software-solutions" element={<Software />} />

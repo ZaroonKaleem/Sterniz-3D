@@ -97,6 +97,11 @@ export const navLinks = [
 
   },
   {
+    id:"Impressum",
+    title:"Impressum",
+    path:"/impressum",
+  },
+  {
     id: "career",
     title: "Career",
     path: "https://employeemanagementsystemclient-egghd2gphnctazh9.canadacentral-01.azurewebsites.net/careers",

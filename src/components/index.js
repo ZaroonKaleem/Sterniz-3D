@@ -11,8 +11,10 @@ import CanvasLoader from "./Loader";
 import Footer from "./Footer";
 import Software from "./Software"
 import SecurityServicesCard from "./Security"
+import Impressum from "./impressum"
 
 export {
+  Impressum,
   Software,
   Hero,
   Navbar,
