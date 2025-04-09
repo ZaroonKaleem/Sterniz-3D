@@ -12,8 +12,10 @@ import Footer from "./Footer";
 import Software from "./Software"
 import SecurityServicesCard from "./Security"
 import Impressum from "./impressum"
+import Advertisment from "./Advertisment"
 
 export {
+  Advertisment,
   Impressum,
   Software,
   Hero,

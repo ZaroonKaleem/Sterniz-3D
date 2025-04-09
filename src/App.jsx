@@ -7,6 +7,7 @@
     Hero,
     Navbar,
     Tech,
+    Advertisment,
     Works,
     StarsCanvas,
     Footer,
@@ -62,6 +63,9 @@ const App = () => {
                 </div>
                 <div className="relative z-0">
                   <About />
+                </div>
+                <div className="relative z-0">
+                  <Advertisment />
                 </div>
                 <div className="relative z-0">
                   <Experience />
