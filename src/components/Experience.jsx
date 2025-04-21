@@ -5,16 +5,16 @@ import {
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 
+import { useTranslation } from 'react-i18next';  // Import the hook
 import "react-vertical-timeline-component/style.min.css";
 import { useNavigate } from "react-router-dom";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
-
+  const { t } = useTranslation();  // Use the translation hook
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -35,7 +35,7 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">{t(experience.title)}</h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
@@ -59,15 +59,16 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation();  // Use the translation hook
   const navigate = useNavigate();
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>Services</p>
+        <p className={`${styles.sectionSubText} text-center`}>{t('services')}</p>
         <h2
           className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black text-center`}
         >
-          Security Services
+{t('SecurityServices')} 
         </h2>
       </motion.div>
 
@@ -85,7 +86,7 @@ const Experience = () => {
           <button 
           onClick={() => navigate("/security-services")} 
           className="px-6 py-3 hover:bg-[#314277] bg-[#3954a9] text-white font-bold rounded-lg shadow-md transition-all duration-300 w-auto">
-            More Security Services
+            {t('MoreSecurityServices')}
           </button>
         </div>
       </div>

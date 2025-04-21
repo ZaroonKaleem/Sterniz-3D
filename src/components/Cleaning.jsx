@@ -12,6 +12,7 @@ import { styles } from "../styles";
 import { cleaningExperiences } from "../constants"; // Ensure you have this array
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { useTranslation } from 'react-i18next';  // Import the hook
 
 const CleaningServiceCard = ({ experience }) => {
   return (
@@ -58,15 +59,17 @@ const CleaningServiceCard = ({ experience }) => {
 };
 
 const CleaningServices = () => {
+  const { t } = useTranslation();  // Use the translation hook
+
     const navigate = useNavigate();
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>Services</p>
+        <p className={`${styles.sectionSubText} text-center`}>{t('services')}</p>
         <h2
           className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black text-center`}
         >
-          Cleaning Services
+          {t('CleaningServices')}
         </h2>
       </motion.div>
 
@@ -84,7 +87,7 @@ const CleaningServices = () => {
           <button 
           onClick={() => navigate("/cleaning-services")}
           className="px-6 py-3 hover:bg-[#314277] bg-[#3954a9] text-white font-bold rounded-lg shadow-md transition-all duration-300 w-auto">
-            More Cleaning Services
+            {t('MoreCleaningServices')}
           </button>
         </div>
       </div>

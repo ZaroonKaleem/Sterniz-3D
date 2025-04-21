@@ -3,17 +3,20 @@ import { Link } from "react-router-dom";
 import { textVariant3 } from "../utils/motion";
 import { motion } from "framer-motion";
 import { emp } from "../assets"
+import { useTranslation } from 'react-i18next';
+
 const Software = () => {
+  const { t } = useTranslation();
   return (
     <section className="min-h-screen bg-gray-900 text-white py-16 px-6">
       <div className="max-w-7xl mt-4 mx-auto">
         {/* Page Title */}
         <motion.div variants={textVariant3()} initial="hidden" whileInView="show">
   <h1 className="text-4xl mt-16 font-bold animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent text-center mb-6">
-    Software Solutions
+    {t('SoftwareSolutions')}
   </h1>
         <p className="text-lg text-gray-300 text-center mb-12">
-          Explore our innovative software solutions designed to enhance business efficiency.
+          {t('SoftwareSolutionsText')}
         </p>
 </motion.div>
 
@@ -31,17 +34,17 @@ const Software = () => {
               Employee Management System
             </h2> */}
             <h1 className="text-2xl font-semibold animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent  mb-6">
-    Employee Management System
+    {t('EmployeeManagementSystem')}
   </h1>
             <p className="text-gray-300 text-lg mb-4">
-              Our Employee Management System streamlines HR processes, automates attendance tracking, and ensures efficient workforce management.  
+              {t('EmployeeManagementSystemText')}
             </p>
 
             {/* Features List */}
             <ul className="list-disc pl-5 text-gray-400">
-              <li>Automated attendance & payroll</li>
-              <li>Shift scheduling & employee tracking</li>
-              <li>Performance evaluation & reporting</li>
+              <li>{t('AutomatedAttendancePayroll')}</li>
+              <li>{t('ShiftSchedulingEmployeeTracking')}</li>
+              <li>{t('PerformanceEvaluationReporting')}</li>
             </ul>
 
             {/* CTA Button */}
@@ -49,7 +52,7 @@ const Software = () => {
   to="/employee-management"
   className="px-6 py-3 mt-4 bg-[#3954a9] text-black font-bold rounded-lg shadow-md hover:bg-blue-600 transition-all duration-300 w-auto inline-block text-center"
 >
-  Learn More
+              {t('LearnMore')}
 </Link>
 
           </div>
@@ -58,7 +61,7 @@ const Software = () => {
         {/* Future Solutions Placeholder */}
         <div className="mt-16 text-center">
           <p className="text-gray-400 text-lg">
-            More software solutions coming soon... Stay tuned!
+            {t('MoreSoftwareSolutionsComingSoon')}
           </p>
         </div>
       </div>

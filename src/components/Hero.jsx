@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { TicofabCanvas } from "./canvas";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-
+import { useTranslation } from 'react-i18next';
 import {
   BsTwitter,
   BsGithub,
@@ -16,12 +16,10 @@ import {
 } from "react-icons/bs";
 
 const Hero = () => {
+  const { t, i18n } = useTranslation();
+  const translatedWords = t("typewriterWords", { returnObjects: true });
   const [text, count] = useTypewriter({
-    words: [
-      "Security Services",
-      "Facility Management",
-      "Cleaning Services",
-    ],
+    words: translatedWords,
     loop: true,
     delaySpeed: 1000,
   });
@@ -40,7 +38,8 @@ const Hero = () => {
       <h1 className={`${styles.heroHeadText} text-white`}>
         Sterniz <br />
         <span className="animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black">
-          Your Safety, <br /> <span className="hidden sm:inline">Our Priority</span>
+          {t("YourSafety")},
+          <br /> <span className="hidden sm:inline">{t("OurPriority")}</span>
         </span>
       </h1>
 

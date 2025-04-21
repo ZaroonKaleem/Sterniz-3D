@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { LOGO2, SternizBg } from "../assets";
 import Typewriter from "react-ts-typewriter";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';  // Import the hook
 
 const Footer = () => {
+  const { t } = useTranslation();  // Use the translation hook
   const [active, setActive] = useState("");
 
   return (
@@ -20,16 +22,15 @@ const Footer = () => {
           <img src={SternizBg} alt="logo" className="w-28 h-28 object-contain" />
         </Link>
         <p className="text-secondary text-[17px] leading-[30px] text-center select-none">
-          {new Date().getFullYear()} &copy; Sterniz. All rights
-          reserved.
+          {new Date().getFullYear()} {t('Footer')}
         </p>
       </div>
       <div className="w-full h-auto flex justify-center text-[#3852a3] font-bold self-start text-2xl">
         <Typewriter
           text={[
-            "Security Services",
-            "Cleaning Services",
-            "Facility Management",
+            t('SecurityServices'),
+            t('CleaningServices'),
+            t('FacilityManagement'),
           ]}
           loop
           speed={80}

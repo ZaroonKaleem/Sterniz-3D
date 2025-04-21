@@ -5,19 +5,20 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { achievements } from "../constants";
-// import "./Achievement.scss";
+
+import { useTranslation } from 'react-i18next';  // Import the hook
 
 const Achievement = () => {
+  const { t } = useTranslation();  // Use the translation hook
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
         className={`bg-[#222a49] rounded-2xl ${styles.padding}`}
       >
         <motion.div variants={textVariant()}>
-          <h2 className={styles.sectionHeadText}>connect with us to hold secrecy</h2> <br />
-          <p className="text-justify">As valued partners in our security ecosystem, you play a crucial role in maintaining a safe and secure environment. Your authority to provide and verify vital information significantly enhances the effectiveness of our services, ensuring a proactive approach to security management. By actively sharing real-time data, including security monitoring details, camera feeds, and incident reports, you help us maintain accuracy and responsiveness in addressing potential threats.
-
-This direct connection between you and our security infrastructure offers several key benefits:</p>
+          <h2 className={styles.sectionHeadText}>{t('Secrecy')}</h2> <br />
+          <p className="text-justify">{t('SecrecyDescription')}</p>
         </motion.div>
       </div>
       <div className={`-mt-20 justify-center p-6 ${styles.paddingX} gap-7`}>

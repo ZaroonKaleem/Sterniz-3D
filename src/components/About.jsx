@@ -5,6 +5,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { about } from "../assets";
+import { useTranslation } from 'react-i18next';  // Import the hook
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <div
@@ -34,34 +35,23 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const { t } = useTranslation();  // Use the translation hook
+  
   return (
     <>
       <div variants={textVariant()}>
-        <p className={styles.sectionSubText}>About US</p>
+        <p className={styles.sectionSubText}>{t('about')}</p>
         <h2
           className={`${styles.sectionHeadText} animate-text bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black`}
         >
-          Overview.
+          {t('overview')}
         </h2>
       </div>
       <div className="flex items-center min-[1000px]:flex-row flex-col-reverse">
         <p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-secondary text-justify text-[17px] max-w-3xl leading-[30px]"
-        >
-          We are seasoned security professionals with years of hands-on
-          experience, driven by a strong passion for safety, vigilance, and
-          expertise. Our commitment to excellence ensures the delivery of
-          top-tier protection services, meticulously tailored to meet diverse
-          security needs across various industries. With a deep understanding of
-          risk management, surveillance, and advanced security protocols, we
-          take a proactive approach to safeguarding people, properties, and
-          assets. Our team is equipped with cutting-edge technology and industry
-          best practices, enabling us to anticipate potential threats and
-          respond swiftly to any security challenges. Whether it's event
-          protection, emergency response, or facility management, we strive to
-          create a safe, secure, and worry-free environment for our clients,
-          fostering peace of mind and trust at every step.
+        > {t('intro')}
         </p>
         <Tilt className="xs:w-[350px] xs:h-[350px] w-full h-full m-auto max-[1000px]:my-14">
           <div
