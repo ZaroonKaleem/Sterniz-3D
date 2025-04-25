@@ -117,10 +117,6 @@ const services = [
     title: "Facility Maangement",
     icon: facility,
   },
-  // {
-  //   title: "Cleaning Services",
-  //   icon: cleaning,
-  // },
 ];
 
 const technologies = [

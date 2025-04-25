@@ -102,7 +102,7 @@ import { SectionWrapper } from "../hoc";
 import { textVariant3 } from "../utils/motion";
 import Lottie from "lottie-react";
 import { useState, useEffect } from "react";
-
+import { useTranslation } from 'react-i18next';
 
 // import CheckCircleIcon from "../assets/icons2/check-circle.svg";
 import Property from "../assets/images/property.json";
@@ -129,118 +129,13 @@ const animationMap = {
   "ConstructionSite.json": ConstructionSite,
 };
 
-// Define the data inside the file
-const portfolioProjects = [
-  {
-    company: "Property Protection",
-    title: "Safeguarding Your Assets",
-    results: [
-      { title: "Commercial & Residential Security" },
-      { title: "Advanced Alarm & Monitoring Systems" },
-      { title: "Access Control & Perimeter Protection" },
-    ],
-    animation: "Property.json",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Event Protection",
-    title: "Ensuring Secure & Safe Events",
-    results: [
-      { title: "Crowd Control & Access Management" },
-      { title: "VIP & Executive Protection" },
-      { title: "Emergency Response Planning" },
-    ],
-    // animation: "/assets/event-protection.svg",
-    animation: "EventProtection.json",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Emergency Call & Service Control Center",
-    title: "Rapid Response & 24/7 Monitoring",
-    results: [
-      { title: "Emergency Dispatch & Support" },
-      { title: "Live Incident Reporting" },
-      { title: "Real-Time Surveillance Coordination" },
-    ],
-    animation: "EmergencyCall.json",
-    // animation: "/assets/emergency-call.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Gatekeeper & Reception Service",
-    title: "Professional Access Control",
-    results: [
-      { title: "Visitor Verification & Registration" },
-      { title: "ID & Access Badge Management" },
-      { title: "Lobby & Entrance Surveillance" },
-    ],
-    animation: "Gatekeeper.json",
-    // animation: "/assets/gatekeeper.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Fire Safety Security Service",
-    title: "Preventing Fire Hazards",
-    results: [
-      { title: "Fire Prevention & Safety Training" },
-      { title: "Fire Alarm & Suppression Systems" },
-      { title: "Emergency Evacuation Planning" },
-    ],
-    animation: "FireSafety.json",
-    // animation: "/assets/fire-safety.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Department Store Detective",
-    title: "Retail Theft Prevention",
-    results: [
-      { title: "Covert Surveillance & Loss Prevention" },
-      { title: "Shoplifting Prevention" },
-      { title: "Store Safety & Incident Reporting" },
-    ],
-    animation: "DepartmentDetective.json",
-    // animation: "/assets/department-detective.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Doorman",
-    title: "First Line of Security",
-    results: [
-      { title: "Guest Screening & Assistance" },
-      { title: "Entrance & Exit Monitoring" },
-      { title: "Security Presence & Patrolling" },
-    ],
-    animation: "Doorman.json",
-    // animation: "/assets/doorman.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Mall Guard",
-    title: "Ensuring Safe Shopping Environments",
-    results: [
-      { title: "Surveillance & Security Patrols" },
-      { title: "Crowd & Incident Management" },
-      { title: "Emergency Handling & Response" }, 
-    ],
-    animation: "MallGuard.json",
-    // animation: "/assets/mall-guard.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-  {
-    company: "Construction Site Security",
-    title: "Protecting Active Worksites",
-    results: [
-      { title: "24/7 Site Monitoring & Access Control" },
-      { title: "Equipment & Material Theft Prevention" },
-      { title: "Intruder Detection & Rapid Response" },
-    ],
-    animation: "ConstructionSite.json",
-    // animation: "/assets/construction-site.svg",
-    link: "https://youtu.be/Z7I5uSRHMHg",
-  },
-];
+
 
 const SecurityServiceCard = ({ service, index }) => {
+
+  const { t } = useTranslation();
+
+  
   const [animationData, setAnimationData] = useState(null);
 
   useEffect(() => {
@@ -321,6 +216,113 @@ const SecurityServiceCard = ({ service, index }) => {
 
 // Main Security Services Component
 const SecurityServices = () => {
+  
+  const { t } = useTranslation();
+
+  // Define the data inside the file
+  const portfolioProjects = [
+    {
+      company: t("property_protection.company"),
+      title: t("property_protection.title"),
+      results: [
+        { title: t("property_protection.result1") },
+        { title: t("property_protection.result2") },
+        { title: t("property_protection.result3") },
+      ],
+      animation: "Property.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("event_protection.company"),
+      title: t("event_protection.title"),
+      results: [
+        { title: t("event_protection.result1") },
+        { title: t("event_protection.result2") },
+        { title: t("event_protection.result3") },
+      ],
+      animation: "EventProtection.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("emergency_call_service_control_center.company"),
+      title: t("emergency_call_service_control_center.title"),
+      results: [
+        { title: t("emergency_call_service_control_center.result1") },
+        { title: t("emergency_call_service_control_center.result2") },
+        { title: t("emergency_call_service_control_center.result3") },
+      ],
+      animation: "EmergencyCall.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("gatekeeper_reception_service.company"),
+      title: t("gatekeeper_reception_service.title"),
+      results: [
+        { title: t("gatekeeper_reception_service.result1") },
+        { title: t("gatekeeper_reception_service.result2") },
+        { title: t("gatekeeper_reception_service.result3") },
+      ],
+      animation: "Gatekeeper.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("fire_safety_security_service.company"),
+      title: t("fire_safety_security_service.title"),
+      results: [
+        { title: t("fire_safety_security_service.result1") },
+        { title: t("fire_safety_security_service.result2") },
+        { title: t("fire_safety_security_service.result3") },
+      ],
+      animation: "FireSafety.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("department_store_detective.company"),
+      title: t("department_store_detective.title"),
+      results: [
+        { title: t("department_store_detective.result1") },
+        { title: t("department_store_detective.result2") },
+        { title: t("department_store_detective.result3") },
+      ],
+      animation: "DepartmentDetective.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("doorman.company"),
+      title: t("doorman.title"),
+      results: [
+        { title: t("doorman.result1") },
+        { title: t("doorman.result2") },
+        { title: t("doorman.result3") },
+      ],
+      animation: "Doorman.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("mall_guard.company"),
+      title: t("mall_guard.title"),
+      results: [
+        { title: t("mall_guard.result1") },
+        { title: t("mall_guard.result2") },
+        { title: t("mall_guard.result3") },
+      ],
+      animation: "MallGuard.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+    {
+      company: t("construction_site_security.company"),
+      title: t("construction_site_security.title"),
+      results: [
+        { title: t("construction_site_security.result1") },
+        { title: t("construction_site_security.result2") },
+        { title: t("construction_site_security.result3") },
+      ],
+      animation: "ConstructionSite.json",
+      link: "https://youtu.be/Z7I5uSRHMHg",
+    },
+  ];
+  
+
   return (
     <>
       {/* Heading Section */}
@@ -330,9 +332,9 @@ const SecurityServices = () => {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <p className={`${styles.sectionSubText} mt-4 text-center`}>What We Offer</p>
+        <p className={`${styles.sectionSubText} mt-4 text-center`}>{t('WhatWeOffer')}</p>
         <h2 className={`${styles.sectionHeadText} bg-gradient-to-r from-[#3954a9] via-[#314277] to-[#7ba6df] bg-clip-text text-transparent font-black text-center`}>
-          Security Services
+          {t('SecurityServices')}
         </h2>
       </motion.div>
 

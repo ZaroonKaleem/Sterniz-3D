@@ -4,6 +4,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { sheild } from "../assets";
+import { facility } from "../assets";
 import { about } from "../assets";
 import { useTranslation } from 'react-i18next';  // Import the hook
 const ServiceCard = ({ index, title, icon }) => (
@@ -71,11 +73,64 @@ const About = () => {
           </div>
         </Tilt>
       </div>
-      <div className="mt-20 flex flex-wrap gap-10 justify-center items-center">
+      {/* <div className="mt-20 flex flex-wrap gap-10 justify-center items-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
+      </div> */}
+      <div className="mt-20 flex flex-wrap gap-10 justify-center items-center">
+  {/* First Service Card - Software Solutions */}
+  <Tilt className="xs:w-[250px] w-full">
+    <div
+      variants={fadeIn("right", "spring", 0 * 0.5, 0.75)}
+      className="w-full border border-2 border-[#314277] p-[1px] rounded-[20px] shadow-card"
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-[#222a49] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+      >
+        <img
+          src={sheild}  // Make sure to import this icon at the top
+          alt="software-solutions"
+          className="w-16 h-16 object-contain"
+        />
+        <h3 className="text-white text-[20px] font-bold text-center">
+          {t('SoftwareSolutions')} {/* Translated text */}
+        </h3>
       </div>
+    </div>
+  </Tilt>
+
+  {/* Second Service Card - Facility Management */}
+  <Tilt className="xs:w-[250px] w-full">
+    <div
+      variants={fadeIn("right", "spring", 1 * 0.5, 0.75)}
+      className="w-full border border-2 border-[#314277] p-[1px] rounded-[20px] shadow-card"
+    >
+      <div
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-[#222a49] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+      >
+        <img
+          src={facility}  // Make sure to import this icon at the top
+          alt="facility-management"
+          className="w-16 h-16 object-contain"
+        />
+        <h3 className="text-white text-[20px] font-bold text-center">
+          {t('FacilityManagement')} {/* Translated text */}
+        </h3>
+      </div>
+    </div>
+  </Tilt>
+</div>
     </>
   );
 };

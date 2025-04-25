@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
+import Backend from 'i18next-http-backend';
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
@@ -73,6 +73,176 @@ const resources = {
       MoreSoftwareSolutionsComingSoon: "More Software Solutions Coming Soon",
       WhatWeOffer: "What We Offer",
       CleaningServices: "Cleaning Services",
+      SoftwareSolutions: "Software Solutions",
+      FacilityManagement: "Facility Management",
+      PropertyProtection: "Property Protection",
+      PropertyProtectionP: "Property Protection ensures the safety of residential and commercial properties by preventing unauthorized access, vandalism, and theft through advanced security measures and surveillance.",
+      EventProtection: "Event Protection",
+      EventProtectionP: "Event Protection ensures the safety and security of events by managing crowd control, preventing unauthorized access, and responding to emergencies effectively.",
+      CleaningAndService: "Cleaning and Service",
+      CleaningAndServiceP: "Comprehensive cleaning solutions, including routine maintenance, deep cleaning, and specialized services tailored to different industries.",
+      MaintenanceCleaning: "Maintenance cleaning",
+      MaintenanceCleaningP: "Regular cleaning to keep spaces clean and hygienic, ensuring long-term upkeep of buildings and facilities.",
+
+
+
+
+      general_cleaning: {
+        company: "General Cleaning",
+        title: "Comprehensive Cleaning Solutions",
+        result1: "Daily & Weekly Cleaning",
+        result2: "Sanitization & Hygiene Maintenance",
+        result3: "Eco-Friendly Solutions"
+      },
+      glass_cleaning: {
+        company: "Glass & Facade Cleaning",
+        title: "Clear & Spotless Windows",
+        result1: "Streak-Free Window Cleaning",
+        result2: "High-Rise Building Services",
+        result3: "Glass Surface Polishing"
+      },
+      disinfectant_cleaning: {
+        company: "Disinfectant Cleaning",
+        title: "Health & Safety Compliance",
+        result1: "Virus & Bacteria Elimination",
+        result2: "Hospital-Grade Disinfection",
+        result3: "Sanitization for Workplaces"
+      },
+      construction_cleaning: {
+        company: "Construction Cleaning",
+        title: "Post-Construction Cleanup",
+        result1: "Dust & Debris Removal",
+        result2: "Surface Polishing & Washing",
+        result3: "Final Inspection Cleaning"
+      },
+      industrial_cleaning: {
+        company: "Industrial Cleaning",
+        title: "Heavy-Duty Cleaning Solutions",
+        result1: "Machine & Equipment Cleaning",
+        result2: "Oil & Grease Removal",
+        result3: "Factory & Warehouse Maintenance"
+      },
+
+
+
+
+
+
+      "serviceTitles": {
+        "propertyProtection": "Property Protection",
+        "eventProtection": "Event Protection",
+        "emergencyCallServiceControlCenter": "Emergency Call & Service Control Center",
+        "gatekeeperReceptionService": "Gatekeeper & Reception Service",
+        "fireSafetySecurityService": "Fire Safety Security Service",
+        "departmentStoreDetective": "Department Store Detective",
+        "doorman": "Doorman",
+        "mallGuard": "Mall Guard",
+        "constructionSiteSecurity": "Construction Site Security"
+      },
+      "serviceDescriptions": {
+        "safeguardingYourAssets": "Safeguarding Your Assets",
+        "ensuringSecureSafeEvents": "Ensuring Secure & Safe Events",
+        "rapidResponse247Monitoring": "Rapid Response & 24/7 Monitoring",
+        "professionalAccessControl": "Professional Access Control",
+        "preventingFireHazards": "Preventing Fire Hazards",
+        "retailTheftPrevention": "Retail Theft Prevention",
+        "firstLineSecurity": "First Line of Security",
+        "ensuringSafeShoppingEnvironments": "Ensuring Safe Shopping Environments",
+        "protectingActiveWorksites": "Protecting Active Worksites"
+      },
+      "results": {
+        "commercialResidentialSecurity": "Commercial & Residential Security",
+        "advancedAlarmMonitoringSystems": "Advanced Alarm & Monitoring Systems",
+        "accessControlPerimeterProtection": "Access Control & Perimeter Protection",
+        "crowdControlAccessManagement": "Crowd Control & Access Management",
+        "VIPExecutiveProtection": "VIP & Executive Protection",
+        "emergencyResponsePlanning": "Emergency Response Planning",
+        "emergencyDispatchSupport": "Emergency Dispatch & Support",
+        "liveIncidentReporting": "Live Incident Reporting",
+        "realTimeSurveillanceCoordination": "Real-Time Surveillance Coordination",
+        "visitorVerificationRegistration": "Visitor Verification & Registration",
+        "IDAccessBadgeManagement": "ID & Access Badge Management",
+        "lobbyEntranceSurveillance": "Lobby & Entrance Surveillance",
+        "firePreventionSafetyTraining": "Fire Prevention & Safety Training",
+        "fireAlarmSuppressionSystems": "Fire Alarm & Suppression Systems",
+        "emergencyEvacuationPlanning": "Emergency Evacuation Planning",
+        "covertSurveillanceLossPrevention": "Covert Surveillance & Loss Prevention",
+        "shopliftingPrevention": "Shoplifting Prevention",
+        "storeSafetyIncidentReporting": "Store Safety & Incident Reporting",
+        "guestScreeningAssistance": "Guest Screening & Assistance",
+        "entranceExitMonitoring": "Entrance & Exit Monitoring",
+        "securityPresencePatrolling": "Security Presence & Patrolling",
+        "surveillanceSecurityPatrols": "Surveillance & Security Patrols",
+        "crowdIncidentManagement": "Crowd & Incident Management",
+        "emergencyHandlingResponse": "Emergency Handling & Response",
+        "siteMonitoringAccessControl": "Site Monitoring & Access Control",
+        "equipmentMaterialTheftPrevention": "Equipment & Material Theft Prevention",
+        "intruderDetectionRapidResponse": "Intruder Detection & Rapid Response"
+      },
+
+      "property_protection": {
+    "company": "Property Protection",
+    "title": "Safeguarding Your Assets",
+    "result1": "Commercial & Residential Security",
+    "result2": "Advanced Alarm & Monitoring Systems",
+    "result3": "Access Control & Perimeter Protection"
+  },
+  "event_protection": {
+    "company": "Event Protection",
+    "title": "Ensuring Secure & Safe Events",
+    "result1": "Crowd Control & Access Management",
+    "result2": "VIP & Executive Protection",
+    "result3": "Emergency Response Planning"
+  },
+  "emergency_call_service_control_center": {
+    "company": "Emergency Call & Service Control Center",
+    "title": "Rapid Response & 24/7 Monitoring",
+    "result1": "Emergency Dispatch & Support",
+    "result2": "Live Incident Reporting",
+    "result3": "Real-Time Surveillance Coordination"
+  },
+  "gatekeeper_reception_service": {
+    "company": "Gatekeeper & Reception Service",
+    "title": "Professional Access Control",
+    "result1": "Visitor Verification & Registration",
+    "result2": "ID & Access Badge Management",
+    "result3": "Lobby & Entrance Surveillance"
+  },
+  "fire_safety_security_service": {
+    "company": "Fire Safety Security Service",
+    "title": "Preventing Fire Hazards",
+    "result1": "Fire Prevention & Safety Training",
+    "result2": "Fire Alarm & Suppression Systems",
+    "result3": "Emergency Evacuation Planning"
+  },
+  "department_store_detective": {
+    "company": "Department Store Detective",
+    "title": "Retail Theft Prevention",
+    "result1": "Covert Surveillance & Loss Prevention",
+    "result2": "Shoplifting Prevention",
+    "result3": "Store Safety & Incident Reporting"
+  },
+  "doorman": {
+    "company": "Doorman",
+    "title": "First Line of Security",
+    "result1": "Guest Screening & Assistance",
+    "result2": "Entrance & Exit Monitoring",
+    "result3": "Security Presence & Patrolling"
+  },
+  "mall_guard": {
+    "company": "Mall Guard",
+    "title": "Ensuring Safe Shopping Environments",
+    "result1": "Surveillance & Security Patrols",
+    "result2": "Crowd & Incident Management",
+    "result3": "Emergency Handling & Response"
+  },
+  "construction_site_security": {
+    "company": "Construction Site Security",
+    "title": "Protecting Active Worksites",
+    "result1": "24/7 Site Monitoring & Access Control",
+    "result2": "Equipment & Material Theft Prevention",
+    "result3": "Intruder Detection & Rapid Response"
+  },
     },
   },
   de: {
@@ -143,11 +313,179 @@ const resources = {
       MoreSoftwareSolutionsComingSoon: "Weitere Softwarelösungen bald verfügbar",
       WhatWeOffer: "Was wir anbieten",
       CleaningServices: "Reinigungsdienste",
+      SoftwareSolutions: "Softwarelösungen",
+      FacilityManagement: "Gebäudewartung",
+      PropertyProtection: "Eigentumsschutz",
+      PropertyProtectionP: "Property Protection gewährleistet die Sicherheit von Wohn- und Gewerbeimmobilien, indem es durch fortschrittliche Sicherheitsmaßnahmen und Überwachung unbefugten Zugriff, Vandalismus und Diebstahl verhindert.",
+      EventProtection: "Veranstaltungsschutz",
+      EventProtectionP: "Der Veranstaltungsschutz gewährleistet die Sicherheit bei Veranstaltungen, indem er die Menschenmenge kontrolliert, unbefugten Zutritt verhindert und effektiv auf Notfälle reagiert.",
+      CleaningAndService: "Reinigung und Service",
+      CleaningAndServiceP: "Umfassende Reinigungslösungen, einschließlich Routinewartung, Tiefenreinigung und spezialisierter Dienstleistungen, die auf verschiedene Branchen zugeschnitten sind.",
+      MaintenanceCleaning: "Unterhaltsreinigung",
+      MaintenanceCleaningP: "Regelmäßige Reinigung sorgt für Sauberkeit und Hygiene in den Räumen und gewährleistet so die langfristige Instandhaltung von Gebäuden und Einrichtungen.",
+
+
+
+
+      general_cleaning: {
+        company: "Allgemeine Reinigung",
+        title: "Umfassende Reinigungslösungen",
+        result1: "Tägliche & wöchentliche Reinigung",
+        result2: "Desinfektion & Hygienewartung",
+        result3: "Umweltfreundliche Lösungen"
+      },
+      glass_cleaning: {
+        company: "Glas- & Fassadenreinigung",
+        title: "Klares & makelloses Glas",
+        result1: "Streifenfreie Fensterreinigung",
+        result2: "Hochhaus-Reinigungsdienste",
+        result3: "Polieren von Glasoberflächen"
+      },
+      disinfectant_cleaning: {
+        company: "Desinfektionsreinigung",
+        title: "Gesundheits- & Sicherheitskonformität",
+        result1: "Virus- & Bakterieneliminierung",
+        result2: "Krankenhausdesinfektion",
+        result3: "Sanitierung für Arbeitsplätze"
+      },
+      construction_cleaning: {
+        company: "Baureinigung",
+        title: "Nach-Bau-Aufräumarbeiten",
+        result1: "Staub- & Schuttbeseitigung",
+        result2: "Oberflächenpolieren & Waschen",
+        result3: "Endabnahme-Reinigung"
+      },
+      industrial_cleaning: {
+        company: "Industriereinigung",
+        title: "Reinigungslösungen für Schwerlast",
+        result1: "Maschinen- & Gerätepflege",
+        result2: "Öl- & Fettentfernung",
+        result3: "Werkstatt- & Lagerpflege"
+      },
+
+
+
+  "property_protection": {
+    "company": "Eigentumsschutz",
+    "title": "Schutz Ihrer Vermögenswerte",
+    "result1": "Gewerbliche & Wohnsicherheit",
+    "result2": "Erweiterte Alarm- & Überwachungssysteme",
+    "result3": "Zugangskontrolle & Umfassender Schutz"
+  },
+  "event_protection": {
+    "company": "Veranstaltungsschutz",
+    "title": "Sichere & geschützte Veranstaltungen gewährleisten",
+    "result1": "Crowd Control & Zugangskontrolle",
+    "result2": "VIP- & Exekutivschutz",
+    "result3": "Notfall-Reaktionsplanung"
+  },
+  "emergency_call_service_control_center": {
+    "company": "Notruf- & Service-Kontrollzentrum",
+    "title": "Schnelle Reaktion & 24/7 Überwachung",
+    "result1": "Notfall-Dispatch & Unterstützung",
+    "result2": "Live-Vorfallberichtserstattung",
+    "result3": "Echtzeit-Überwachungskoordination"
+  },
+  "gatekeeper_reception_service": {
+    "company": "Torwächter- & Empfangsdienst",
+    "title": "Professionelle Zugangskontrolle",
+    "result1": "Besucherüberprüfung & Registrierung",
+    "result2": "Ausweis- & Zugangskartenverwaltung",
+    "result3": "Lobbys & Eingangsüberwachung"
+  },
+  "fire_safety_security_service": {
+    "company": "Brandschutz-Sicherheitsdienst",
+    "title": "Brandgefahren verhindern",
+    "result1": "Brandverhütung & Sicherheitstraining",
+    "result2": "Brandmelde- & Löschsysteme",
+    "result3": "Notfall-Evakuierungsplanung"
+  },
+  "department_store_detective": {
+    "company": "Warenhausdetektiv",
+    "title": "Einzelhandelsdiebstahl-Prävention",
+    "result1": "Geheime Überwachung & Verlustprävention",
+    "result2": "Diebstahlsprävention",
+    "result3": "Geschäftssicherheit & Vorfallberichtserstattung"
+  },
+  "doorman": {
+    "company": "Türsteher",
+    "title": "Erste Sicherheitslinie",
+    "result1": "Gastüberprüfung & Unterstützung",
+    "result2": "Eingangs- & Ausgangsüberwachung",
+    "result3": "Sicherheitspräsenz & Patrouille"
+  },
+  "mall_guard": {
+    "company": "Mall Guard",
+    "title": "Sichere Einkaufserlebnisse gewährleisten",
+    "result1": "Überwachung & Sicherheitsstreifen",
+    "result2": "Mengen- & Vorfallmanagement",
+    "result3": "Notfallmanagement & Reaktion"
+  },
+  "construction_site_security": {
+    "company": "Baustellen-Sicherheit",
+    "title": "Schutz aktiver Baustellen",
+    "result1": "24/7 Baustellenüberwachung & Zugangskontrolle",
+    "result2": "Diebstahlschutz für Ausrüstung & Material",
+    "result3": "Einbruchserkennung & schnelle Reaktion"
+  },
+        "serviceTitles": {
+          "propertyProtection": "Eigentumsschutz",
+          "eventProtection": "Veranstaltungsschutz",
+          "emergencyCallServiceControlCenter": "Notruf- & Service-Kontrollzentrum",
+          "gatekeeperReceptionService": "Torwächter- & Empfangsdienst",
+          "fireSafetySecurityService": "Feuerwehr-Sicherheitsdienst",
+          "departmentStoreDetective": "Warenhausdetektiv",
+          "doorman": "Doorman",
+          "mallGuard": "Mall Guard",
+          "constructionSiteSecurity": "Baustellensicherheit"
+        },
+        "serviceDescriptions": {
+          "safeguardingYourAssets": "Schutz Ihres Eigentums",
+          "ensuringSecureSafeEvents": "Sichere & sichere Veranstaltungen gewährleisten",
+          "rapidResponse247Monitoring": "Schnelle Reaktion & 24/7 Überwachung",
+          "professionalAccessControl": "Professionelle Zugangskontrolle",
+          "preventingFireHazards": "Brandgefahren vorbeugen",
+          "retailTheftPrevention": "Einzelhandelsdiebstahlprävention",
+          "firstLineSecurity": "Erste Sicherheitslinie",
+          "ensuringSafeShoppingEnvironments": "Sichere Einkaufserlebnisse gewährleisten",
+          "protectingActiveWorksites": "Schutz aktiver Baustellen"
+        },
+        "results": {
+          "commercialResidentialSecurity": "Kommerzielle & Wohnsicherheit",
+          "advancedAlarmMonitoringSystems": "Erweiterte Alarm- & Überwachungssysteme",
+          "accessControlPerimeterProtection": "Zugangskontrolle & Perimeterschutz",
+          "crowdControlAccessManagement": "Crowd Control & Zugangskontrolle",
+          "VIPExecutiveProtection": "VIP- & Executive-Schutz",
+          "emergencyResponsePlanning": "Notfallreaktionsplanung",
+          "emergencyDispatchSupport": "Notfall-Einsatz & Unterstützung",
+          "liveIncidentReporting": "Live Vorfallberichterstattung",
+          "realTimeSurveillanceCoordination": "Echtzeit-Überwachungskoordination",
+          "visitorVerificationRegistration": "Besucher-Überprüfung & Registrierung",
+          "IDAccessBadgeManagement": "ID & Zugangskartenverwaltung",
+          "lobbyEntranceSurveillance": "Lobby- & Eingangsüberwachung",
+          "firePreventionSafetyTraining": "Brandprävention & Sicherheitsschulung",
+          "fireAlarmSuppressionSystems": "Brandmelde- & Löschsysteme",
+          "emergencyEvacuationPlanning": "Notfall-Evakuierungsplanung",
+          "covertSurveillanceLossPrevention": "Verdeckte Überwachung & Verlustprävention",
+          "shopliftingPrevention": "Ladendiebstahl-Prävention",
+          "storeSafetyIncidentReporting": "Ladensicherheit & Vorfallbericht",
+          "guestScreeningAssistance": "Gästekontrolle & Unterstützung",
+          "entranceExitMonitoring": "Eingangs- & Ausgangskontrolle",
+          "securityPresencePatrolling": "Sicherheitspräsenz & Patrouillen",
+          "surveillanceSecurityPatrols": "Überwachung & Sicherheits-Patrouillen",
+          "crowdIncidentManagement": "Mengen- & Vorfallmanagement",
+          "emergencyHandlingResponse": "Notfallbehandlung & Reaktion",
+          "siteMonitoringAccessControl": "Baustellen-Überwachung & Zugangskontrolle",
+          "equipmentMaterialTheftPrevention": "Diebstahlprävention für Ausrüstung & Material",
+          "intruderDetectionRapidResponse": "Einbrechererkennung & schnelle Reaktion"
+
+      }
     },
   },
 };
 
 i18n
+  .use(Backend)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
@@ -158,6 +496,9 @@ i18n
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
+    backend: {
+      loadPath: 'src/utils/cleaning-{{lng}}.json'
+    }
   });
 
 export default i18n;
